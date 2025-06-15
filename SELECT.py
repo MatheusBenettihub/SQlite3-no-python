@@ -14,7 +14,7 @@ cursor.execute(f'UPDATE {TABLE_NAME} SET name = ? WHERE id = ?', ('Patrick', 140
 cursor.execute(f'UPDATE {TABLE_NAME} SET weight = 80 WHERE id = 140') #sem segurança
 connection.commit()
 
-#Counsultas READ
+#Counsultas READ com filtros
 cursor.execute(f'SELECT * FROM {TABLE_NAME} ORDER BY name DESC LIMIT 5 '
 )
 print(cursor.fetchall())
